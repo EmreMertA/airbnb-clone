@@ -14,6 +14,7 @@ const Logo = () => {
       src='/images/logo.png'
       blurDataURL={'/img/logo.png'}
       priority={true}
+      onClick={() => router.push('/')}
     />
   ); 
 };
