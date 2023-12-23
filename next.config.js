@@ -12,6 +12,7 @@ const nextConfig = {
       'github.com',
       'raw.githubusercontent.com',
       'lh3.googleusercontent.com',
+      'res.cloudinary.com',
     ],
   },
 };
