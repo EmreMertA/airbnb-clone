@@ -123,6 +123,7 @@ const LoginModal = () => {
 
   return (
     <Modal
+      testid='login-modal'
       disabled={isLoading}
       isOpen={loginModal.isOpen}
       title='Login'

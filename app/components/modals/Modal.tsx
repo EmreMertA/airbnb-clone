@@ -13,6 +13,7 @@ interface ModalProps {
   disabled?: boolean;
   secondaryAction?: () => void;
   secondaryActionLabel?: string;
+  testid?: string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -26,6 +27,7 @@ const Modal: React.FC<ModalProps> = ({
   disabled,
   secondaryAction,
   secondaryActionLabel,
+  testid
 }) => {
   const [showModal, setShowModal] = useState(isOpen);
 
@@ -57,6 +59,7 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <>
       <div
+        data-testid={testid}
         className='
           flex
           justify-center
@@ -96,12 +99,18 @@ const Modal: React.FC<ModalProps> = ({
               {/* HEADER */}
               <div className='flex items-center p-6 rounded-t justify-center relative border-b-[1px]'>
                 <button
+                  data-testid='close-button'
                   onClick={handleClose}
                   className='p-1 border-0 hover:opacity-70 transition absolute left-9'
                 >
                   <IoMdClose size={16} />
                 </button>
-                <div className='text-lg font-semibold'>{title}</div>
+                <div
+                  data-testid='modal-title'
+                  className='text-lg font-semibold'
+                >
+                  {title}
+                </div>
               </div>
 
               {/* BODY */}
@@ -119,6 +128,7 @@ const Modal: React.FC<ModalProps> = ({
                     />
                   )}
                   <Button
+                    data-testid='action-button'
                     disabled={disabled}
                     label={actionLabel}
                     onClick={handleSubmit}

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",
@@ -41,6 +42,7 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/leaflet": "^1.9.8",
+    "cypress": "^13.6.2",
     "prisma": "^5.7.0"
   }
 }
