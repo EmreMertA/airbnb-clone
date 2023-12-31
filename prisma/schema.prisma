@@ -23,7 +23,7 @@ model User {
 
   accounts Account[]
   listings Listing[]
-  reservations Reservation[]
+  reservations Reservation[] 
 }
 
 model Account {

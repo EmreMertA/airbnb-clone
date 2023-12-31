@@ -17,7 +17,7 @@ interface ListingsCardProps {
   disabled?: boolean;
   actionLabel?: string;
   actionId?: string;
-  currentUser?: User | null;
+  currentUser?: SafeUser | null;
 }
 
 const ListingsCard: React.FC<ListingsCardProps> = ({
