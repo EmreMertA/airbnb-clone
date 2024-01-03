@@ -5,13 +5,13 @@ import Select from 'react-select';
 export type CountrySelectValue = {
   flag: string;
   label: string;
-  value: string;
   latlng: number[];
   region: string;
+  value: string;
 };
 
 interface CountrySelectProps {
-  value: CountrySelectValue;
+  value?: CountrySelectValue;
   onChange: (value: CountrySelectValue) => void;
 }
 
@@ -32,7 +32,7 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange }) => {
             <div>
               {option.label},
               <span className='text-neatral-800 ml-1'>{option.region}</span>
-            </div> 
+            </div>
           </div>
         )}
         classNames={{
