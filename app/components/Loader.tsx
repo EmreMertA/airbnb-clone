@@ -4,6 +4,7 @@ import { PuffLoader } from 'react-spinners';
 const Loader = () => {
   return (
     <div
+      data-test-id='loader'
       className='
         h-[70vh]
         flex

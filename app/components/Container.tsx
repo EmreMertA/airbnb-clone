@@ -6,6 +6,7 @@ interface ContainerProps {
 const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
     <div
+      data-test-id='container'
       className='
         max-w-[2520px]
         mx-auto
@@ -21,4 +22,3 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
 };
 
 export default Container;
- 

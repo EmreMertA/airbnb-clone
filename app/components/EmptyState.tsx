@@ -18,6 +18,7 @@ const EmptyState: React.FC<EmptyStateProps> = ({
   const router = useRouter();
   return (
     <div
+      data-test-id='empty-state'
       className='
         h-[60vh]
         flex

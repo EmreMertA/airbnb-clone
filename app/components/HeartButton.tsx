@@ -20,6 +20,7 @@ const HeartButton: React.FC<HeartButtonProps> = ({
 
   return (
     <div
+      data-testid='heart-button'
       onClick={toggleFavorite}
       className='
        relative

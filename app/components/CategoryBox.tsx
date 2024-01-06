@@ -45,6 +45,7 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
   
   return (
     <div
+    data-test-id='category-box'
     onClick={handleClick}
       className={`
           flex
